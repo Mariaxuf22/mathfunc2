@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+ 
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int x = Convert.ToInt32(Console.ReadLine());
+            int a = Convert.ToInt32(Console.ReadLine());
+            int K = Convert.ToInt32(Console.ReadLine());
+            double N = 0;
+            for (int i = 1; i < K; i++) 
+ 
+            {
+ 
+                N = ((x + a) / Math.Sin(a + x)) + Math.Pow(x, 2) + N;
+ 
+                Console.WriteLine(N);
+            }
+           
+        }
+    }
+    
+}
